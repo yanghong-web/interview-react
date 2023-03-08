@@ -8,13 +8,12 @@ export default function Layout({ children }) {
       <Head>
         <title>博客</title>
         <meta name="description" content="一个博客网站" />
-        <meta name="keywords" content="博客、blog" />
-        <meta name="robots" content="all" />
+        <meta name="robots" content="all" /><meta name="keywords" content="博客、blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NextSeo title="Store Builder" description="Store Builder" />
-   
+
+
       <main>{children}</main>
     </>
   )
