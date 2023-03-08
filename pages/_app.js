@@ -1,12 +1,12 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { theme } from '@chakra-ui/pro-theme'
 import { RecoilRoot } from 'recoil'
-
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import Layout from '../components/Layout.js'
 
 import '../i18n'
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps, err, router }) {
   const myTheme = extendTheme(
     {
       fonts: {
